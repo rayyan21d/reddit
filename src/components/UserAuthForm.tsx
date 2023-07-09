@@ -31,14 +31,14 @@ const UserAuthForm: FC<UserAuthFormProps> = ({className, ...props}) => {
 
 
 
-return (
-  <div className={cn('flex justify-center', className)} {...props}>
-    <Button size='sm' className='w-full' onClick={loginWithGoogle} isLoading={isLoading}>
-    {isLoading ? null : <Icons.google className='h-4 w-4 mr-2' />}
-    Google
-    </Button>
-  </div>
-);
+    return (
+    <div className={cn('flex justify-center', className)} {...props}>
+        <Button size='sm' className='w-full' onClick={loginWithGoogle} isLoading={isLoading}>
+        {isLoading ? null : <Icons.google className='h-4 w-4 mr-2' />}
+        Google
+        </Button>
+    </div>
+    );
 }
 
 export default UserAuthForm

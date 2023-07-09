@@ -69,5 +69,17 @@
   "devDependencies": {
     "@types/editorjs__header": "^2.6.0",
     "@types/lodash.debounce": "^4.0.7"
-  }
+  },
+  "description": "This is a nextJS and tailwind based reddit clone",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayyan21d/reddit.git"
+  },
+  "author": "rayyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayyan21d/reddit/issues"
+  },
+  "homepage": "https://github.com/rayyan21d/reddit#readme"
 }
