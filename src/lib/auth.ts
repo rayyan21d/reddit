@@ -1,5 +1,5 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
-import { NextAuthOptions } from "next-auth"
+import { NextAuthOptions, getServerSession } from "next-auth"
 import GoogleProvider from "next-auth/providers/google"
 import { db } from "./db"
 import { nanoid } from "nanoid"
@@ -24,7 +24,7 @@ export const authOptions: NextAuthOptions ={
                 session.user.id = token.id
                 session.user.name = token.name
                 session.user.email = token.email
-                session.user.image = token.image
+                session.user.image = token.picture
                 session.user.username = token.username
             }
 
@@ -70,3 +70,4 @@ export const authOptions: NextAuthOptions ={
 
 }
 
+export const getAuthSession = ()=> getServerSession(authOptions)
